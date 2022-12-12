@@ -10,12 +10,11 @@
 import modo
 import lx
 
-kit_folder_userval_name = 'h3d_lpk_kit_folder'
+kit_folder_userval_name = "h3d_lpk_kit_folder"
 
-current_path = lx.eval('user.value {} ?'.format(kit_folder_userval_name))
+current_path = lx.eval("user.value {} ?".format(kit_folder_userval_name))
 
-result = modo.dialogs.dirBrowse(title='set kit folder', path=current_path)
+result = modo.dialogs.dirBrowse(title="set kit folder", path=current_path)
 if result is not None:
-    lx.eval('user.value {} {{{}}}'.format(kit_folder_userval_name, result))
-    lx.eval('@{scripts/fill_fields.py}')
-
+    lx.eval("user.value {} {{{}}}".format(kit_folder_userval_name, result))
+    lx.eval("@{scripts/fill_fields.py}")
