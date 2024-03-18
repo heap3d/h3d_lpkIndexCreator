@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # ================================
-# (C)2021 Dmytro Holub
+# (C)2021-2024 Dmytro Holub
 # heap3d@gmail.com
 # --------------------------------
 # modo python
@@ -14,9 +14,11 @@ kit_name_userval_name = 'h3d_lpk_kit_name'
 install_alias_userval_name = 'h3d_lpk_install_alias'
 
 kit_folder_userval = lx.eval('user.value {} ?'.format(kit_folder_userval_name))
-if kit_folder_userval == '':
+if not kit_folder_userval:
     exit()
 
 kit_name_userval = kit_folder_userval.split('\\')[-1]
 
-lx.eval('user.value {} {}'.format(kit_name_userval_name, kit_name_userval))
+print(f'kit_name_userval_name:<{kit_name_userval_name}>   kit_name_userval:<{kit_name_userval}>')
+
+lx.eval('user.value {} "{}"'.format(kit_name_userval_name, kit_name_userval))

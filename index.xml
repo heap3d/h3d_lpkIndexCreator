@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package version="801">
 	<kit name="h3d_lpkIndexCreator" restart="YES">
-		<source target="h3d_lpkIndexCreator/index.cfg">index.cfg</source>
 		<source target="h3d_lpkIndexCreator/scripts/fill_fields.py">scripts/fill_fields.py</source>
 		<source target="h3d_lpkIndexCreator/scripts/lpkIndexCreator_h3d.py">scripts/lpkIndexCreator_h3d.py</source>
 		<source target="h3d_lpkIndexCreator/scripts/set_dir.py">scripts/set_dir.py</source>
