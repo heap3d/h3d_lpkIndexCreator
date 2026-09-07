@@ -8,12 +8,11 @@
 # modo python
 # create index.xml using modo interface
 # ================================
+
 """
 This helps generate the index.xml file you need to unpack a kit using the .lpk installers.
 Fill in the Setup Variables below, and the index.xml file will show up in your kit directory.
 """
-
-
 
 import os
 from typing import Iterable
